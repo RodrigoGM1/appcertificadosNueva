@@ -1,0 +1,661 @@
+/* variables globales */
+:root{
+    --blanco: #fff;
+    --negroClaro: #1e2d3b;
+    --verde: #64b343;
+    --verdeObscuro: #356823;
+    --verderTrasparente: rgba(53,104,45,0.4);
+    --verderTrasparenteClaro: rgba(100, 175, 68, 0.3);
+    --azul: #0044d0;
+    --rojo: #9f2d2b;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+html{
+    height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: var(--negroClaro);
+    font: 1.2rem;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* variables globales */
+
+/* estilos login */
+.body_login{
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.main_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_login_img{
+    width: 10%;
+    margin-bottom: 4rem;
+}
+@media (max-width: 768px) {
+    .main_login_img{    
+        width: 40%;
+    }
+}
+.main_login_form{
+    justify-content: center;
+}
+.main_login_form_h2{
+    font-weight: normal;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.main_login_form_div{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.main_login_form_div label{
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+.main_login_form_div input{
+    padding: 1rem 0;
+    border: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--verdeObscuro);
+    padding: 1rem 0.5rem;
+}
+.main_login_form_div input:focus-visible{
+    outline: none;
+    border: 2px solid var(--verdeObscuro);
+    border-radius: 1rem;
+}
+.main_contenedor_boton{
+    text-align: center;
+    margin-top: 4rem;
+}
+.main_contenedor_boton input{
+    border: none;
+    background-color: var(--verde);
+    padding: 1.8rem 4.8rem;
+    border-radius: 1rem;
+    color: var(--blanco);
+    font-size: 1.5rem;
+}
+/* estilos login */
+
+/* estilos inicio */
+.body{
+    background: rgb(100,179,67);
+    background: linear-gradient(90deg, rgba(101, 179, 67, 0.408) 0%, rgba(100,179,67,0.14842433555453427) 50%, rgba(100,179,67,0.408) 100%);
+}
+.header_inicio{
+    background-color: var(--verdeObscuro);
+    width: 100%;
+    display: flex;
+    height: 6rem;
+    top: 0;
+    justify-content: space-between;
+    position: fixed;
+}
+.header_inicio_conte{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    gap: 1.5rem;
+}
+.header_inicio_conte i{
+    color: var(--blanco);
+    font-size: 2.5rem;
+}
+.header_inicio_conte i:hover{
+    cursor: pointer;
+}
+.header_inicio_conte img{
+    width: 3.5rem;
+    margin-left: 4rem;
+}
+.header_inicio_conte{
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+.menu_inicio{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--verdeObscuro);
+    height: 100%;
+    width: 6.8rem;
+    top: 6rem;
+}
+.menu_inicio a{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_inicio i{
+    color: var(--blanco);
+    font-size: 2.2rem;
+}
+.menu_inicio span{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+.selecionada{
+    background-color: var(--negroClaro);
+}
+.oculto{
+    display: none;
+}
+.despelgar{
+    width: 20rem;
+}
+.main_inicio{
+    margin: 8rem 2rem 9rem 8rem;
+}
+/* estilos inicio */
+
+/* estilos para la carpetas */
+.contenedor_carpeta{
+    display: flex;
+    background-color: var(--verderTrasparente);
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 1rem;
+    border: 1px solid var(--verdeObscuro);
+    color: var(--negroClaro);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contenedor_carpeta:hover{
+    background-color: var(--negroClaro);
+    color: var(--blanco);
+}
+.contenedor_carpeta i{
+    margin-right: 4rem;
+}
+/* estilos para la carpetas */
+
+/* estilos para tablas */
+.tabla{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+.tabla thead{
+    background-color: var(--verdeObscuro);
+}
+.tabla thead tr{
+    font-size: 2rem;
+    color: var(--blanco);
+}
+.tabla thead tr td{
+    padding: 0.5rem;
+    text-align: center;
+}
+.tabla thead tr td:first-child{
+    border-top-left-radius: 1rem;
+}
+.tabla thead tr td:last-child{
+    border-top-right-radius: 1rem;
+}
+.tabla tbody tr{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--negroClaro);
+    border-top: 1px solid var(--negroClaro);
+}
+.tabla tbody tr td{
+    padding: 0.7rem 0.5rem;
+    text-align: center;
+}
+.verdeObscuro{
+    background-color: var(--verderTrasparente);
+}
+.verdeClaro{
+    background-color: var(--verderTrasparenteClaro);
+}
+.estiloOjo{
+    font-size: 2rem;
+    color: var(--azul);
+}
+.estiloBasura{
+    font-size: 2rem;
+    color: var(--rojo);
+    margin-left: 1rem;
+}
+.formTabla{
+    background: rgb(100,179,67);
+    background: linear-gradient(90deg, rgba(101, 179, 67, 0.408) 0%, rgba(100,179,67,0.14842433555453427) 50%, rgba(100,179,67,0.408) 100%);
+}
+.formTabla input{
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.01rem;
+}
+.formTabla button{
+    width: 100%;
+    padding: 0.01rem;
+    background-color: var(--negroClaro);
+    border: none;
+    color: var(--blanco);
+    cursor: pointer;
+}
+.relleno{
+    background-color: var(--negroClaro);
+}
+.formTabla input:focus-visible{
+    outline: none;
+}
+.centrarIconos{
+    text-align: center;
+}
+/* estilos para tablas */
+
+/* estilos para usuarios */
+.contemedotrUsuario{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    align-items: center;
+}
+.contemedotrUsuario h3{
+    font-size: 1.6rem;
+}
+.botonUsuarios{
+    color: var(--blanco);
+    background-color: var(--verdeObscuro);
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    border: 1px solid var(--negroClaro);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.botonUsuarios:hover{
+    background-color: var(--negroClaro);
+}
+
+.modalDialogo{  /*inicio del modal*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialogotarget{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modalDialogo .contenedorModal{
+    width: 40rem;
+    position: relative;
+    margin: 10% auto;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    border-radius: 0.5rem;
+}
+.cerrar{
+    background-color: #606061;
+    color: #fff;
+    line-height: 2.5rem;
+    position: absolute;
+    right: -1.2rem;
+    text-align: center;
+    top: -1rem;
+    width: 2.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    border-radius: 1.2rem;
+    -moz-box-shadow: 0.1rem 0.1rem 0.3rem #000;
+    -webkit-box-shadow: 0.1rem 0.1rem 0.3rem #000;
+    box-shadow: 0.1rem 0.1rem 0.3rem #000; 
+    border: none;
+}
+.cerrar:hover{
+    background: #00d9ff;
+} 
+.botonModal{
+    width: 100%;
+    height: 2.4rem;
+    background-color: var(--negroClaro);
+    border: none;
+    font-size: 1.5rem;
+    color: var(--blanco);
+}
+.inputUsuario{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    border: 2px solid var(--verdeObscuro);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--negroClaro);
+    font-weight: lighter;
+}
+.inputUsuario:focus{
+    outline: none;
+}
+.formUsuarios{
+    display: flex;
+    flex-direction: column;
+}
+.contSelectUsuario {
+    display: flex;
+    flex-direction: column;
+}
+.contSelectUsuario label {
+    font-size: 1.5rem;
+}
+.contSelectUsuario p {
+    color: red;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}/*fin del modal*/
+/* estilos para usuarios */
+
+/* estilos paginador */
+.paginador{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.paginador ul{
+    display: flex;
+    justify-content: center;
+}
+.paginador ul li{
+    padding: 1rem;
+    background-color: rgba(100, 175, 68, 0.3);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid var(--verde);
+    color: var(--verdeObscuro) !important;
+}
+.paginador ul li:first-child{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.paginador ul li:last-child{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.select{
+    background-color: var(--verdeObscuro) !important;
+    border: 1px solid var(--verdeObscuro) !important;
+}
+.selectA{
+    color: var(--blanco) !important;
+}
+.selectV{
+    color: var(--verdeObscuro) !important;
+}
+/* estilos paginador */
+
+/* estilos para formulario */
+.formActualizar{
+    display: flex;    
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.formActualizar input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border: 1px solid var(--negroClaro);
+    font-size: 1rem;
+}
+.formActualizar button{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--negroClaro);
+    color: var(--blanco);
+}
+/* estilos para formulario */
+
+/* estilos aparte */
+.errorIn{
+    padding: 1rem 1rem;
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blanco);
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.btnSubCertificado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--negroClaro);
+    border: none;
+    color: var(--blanco);
+    cursor: pointer;
+    width: 100%;
+}
+.noPaddin{
+    background-color: var(--negroClaro);
+}
+.inputOculto{
+    display: none;
+}
+.manifiesto{
+    cursor: pointer;
+    color: var(--negroClaro);
+}
+
+.labelEdicion{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--verderTrasparente);
+    border: 1px solid var(--verdeObscuro);
+    font-size: 2rem;
+    color: var(--negroClaro);
+}
+/* estilos aparte */
+
+/* estilos de asignacion del viaje */
+
+.contenedorAdministrador{
+    display: flex;
+    margin-top: 2.5rem;
+}
+.formViaje{
+    width: 50%;
+}
+.labelViaje{
+    display: flex;
+    flex-direction: column;
+}
+.labelViaje label{
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+}
+.labelViaje input, select{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    border: 1px solid var(--verdeObscuro);
+    padding: 0.5rem;
+}
+.formViaje button{
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--blanco);
+    background-color: var(--verdeObscuro);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contenedorQr{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.contenedorQr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formResultado{
+    display: flex;
+}
+.formResultado input{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 50%;
+}
+.formResultado button{
+    border: none;
+    border-radius: 0.2rem;
+    color: var(--blanco);
+    background-color: var(--verdeObscuro);
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.tablaCompuesta{
+    width: 100%;
+}
+.tablaCompuesta_apartado{
+    display: flex;
+    justify-content: space-between;
+}
+.tablaCompuesta_componente{
+    width: 50%;
+    border: 1px solid var(--negroClaro);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.colorCabezera{
+    background-color: var(--verdeObscuro);
+    color: var(--blanco);
+}
+.colorBody{
+    background-color: var(--verderTrasparenteClaro);
+}
+.botonPantalla{
+    background-color: var(--verdeObscuro);
+    width: 100%;
+    padding: 1rem 0;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+/* estilos de asignacion del viaje */
+
+/* estilos tabla de viajes */
+.mes{
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.tablaViajes{
+    width: 100%;
+    border-bottom: 1px solid var(--verdeObscuro);
+    border-bottom-left-radius: 1rem;
+}
+.tablaViajes thead{
+    text-align: center;
+    background-color: var(--verdeObscuro);
+    color: var(--blanco);
+    font-size: 1.5rem;
+}
+.tablaViajes thead td{
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.tablaViajes tbody{
+    text-align: center;
+}
+.tablaViajes tbody td{
+    padding: 0.4rem 0.25rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}
+.registroTabla{
+    background-color: var(--negroClaro);
+    color: var(--blanco);
+}
+.encabezadoViajes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.encabezadoViajes_a{
+    background-color: var(--verdeObscuro);
+    color: var(--blanco);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+.formularioNota{
+    display: flex;
+    flex-direction: column;
+}
+.formularioNota input{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.formularioNota button{
+    border: none;
+    border-radius: 1rem;
+    color: var(--blanco);
+    background-color: var(--verdeObscuro);
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.imagenViajes{
+    margin: 0;
+    padding: 0;
+}
+/* estilos tabla de viajes */
